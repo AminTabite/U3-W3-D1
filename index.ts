@@ -21,14 +21,16 @@ const sum = (a: number, b: number) => {  return a + b  }
 sum(2,16)
 
 5) Crea una funzione che accetti un prezzo e restituisca il prezzo con IVA (22%). Usa i tipi appropriati.
-5) const addtax= (price: number) => { return price+ price * 0,22}
+5) const addtax= (price: number) => { return price+ price * 0.22}
 
 addtax()
 
 /*6) Crea una funzione che concateni due stringhe e restituisca la lunghezza totale. 
-const Concatstrings= (str1 : string, str2 : string ) =>
-     {return str1+str2.length }
 
+const Concatstrings= (str1 : string, str2 : string ) =>
+     {return (str1+str2).length }
+
+Concatstrings()
 
 
 7) Cos'è un Type Union e come si scrive?
@@ -39,7 +41,14 @@ const Concatstrings= (str1 : string, str2 : string ) =>
 
 
 9) Crea un tipo per rappresentare i giorni della settimana usando union di stringhe letterali.
-9) Const fullWeek : string = "Monday,Tuesday,Wednesday,Thurday,Friday,Saturday,Sunday"
+9) type GiornoSettimana =
+| "Lunedì"
+| "Martedì"
+| "Mercoledì"
+| "Giovedì"
+| "Venerdì"
+| "Sabato"
+| "Domenica"; Era tipo così?
 
 10) Tipizza il seguente array di numeri nei due modi possibili:
 const numbers = [1, 2, 3]
@@ -78,7 +87,7 @@ const numbers = [1, 2, 3]
      vote: number
 }
 
-ArrayOfStudents<student> = []
+const ArrayOfStudents: Array<student> = []
 
 16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
 16) interface veicolo = {
