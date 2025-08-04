@@ -21,15 +21,15 @@ const sum = (a: number, b: number) => {  return a + b  }
 sum(2,16)
 
 5) Crea una funzione che accetti un prezzo e restituisca il prezzo con IVA (22%). Usa i tipi appropriati.
-5) const addtax= () => {
+5) const addtax= (price: number) => { return price+ price * 0,22}
+
+addtax()
+
+/*6) Crea una funzione che concateni due stringhe e restituisca la lunghezza totale. 
+const Concatstrings= (str1 : string, str2 : string ) =>
+     {return str1+str2.length }
 
 
-
-}
-
-
-6) Crea una funzione che concateni due stringhe e restituisca la lunghezza totale.
-6)
 
 7) Cos'è un Type Union e come si scrive?
 7) Permette di creare un'unione di diversi tipi, ovvero assegnare 2 tipi di dato alla stessa variabile per renderla piú versatile.
@@ -105,8 +105,21 @@ has4wheels: boolean
 }
 
 18) Cosa sono i Generics in TypeScript?
-18) 
+18) é un type passato come argomento di un oggetto per un interface, rendono un interfaccia piú versatile e riutilizzabile nel caso si dovesse lavorare con proprietá di oggetti che cambiano nel tempo 
 
 19) È possibile avere più tipi generici in un'interfaccia?
+19) Si, basta definirli prima e passarli come parametri della interface stessa
 
-20) Crea un'interfaccia generica per una risposta API.  */
+
+20) Crea un'interfaccia generica per una risposta API. 
+20)
+
+interface BsaaAgent<W> {
+gender:string
+YoE: number
+weapons: W
+hasHealingErb: boolean
+}
+
+
+ */
